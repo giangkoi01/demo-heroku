@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://localhost:8080/css/CssLogin.css">
+</head>
+<body>
+<form  th:action="@{/login}" method="post">
+    <div class="Container" style="resize: horizontal;overflow:auto ;">
+            <span class="Sign-In">
+                Sign in
+            </span>
+        <div class="-Input-Label">
+            <div class="Light-Grey">
+                    <span class="Type">
+                        Login
+                    </span>
+            </div>
+            <input name="username" type="text" placeholder="hello@robowolf.net" class="Normal">
+            <div class="Fill">
+                <div class="Check-Circle">
+                    <div class="Icon-box"><img src="/icon/icon-basic-check-circle.png" /></div>
+                </div>
+            </div>
+            </input>
+        </div>
+
+        <div class="-Input-Label">
+            <div class="Light-Grey">
+                <span class="Type">
+                    Password
+                </span>
+            </div>
+            <input name="password" type="password" placeholder="⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁" class="Normal">
+            <div class="Fill">
+                <div class="Check-Circle">
+                    <div class="Icon-box"><img src="/icon/icon-basic-lock.png"/></div>
+                </div>
+            </div>
+            </input>
+        </div>
+
+        <div style="width:100%; height: 60px;">
+            <button type="submit" class="white-login"><span class="white-type">Login</span></button>
+        </div>
+        <br>
+        <div style="width:100%; height: 200px;">
+            <button type="button" class="white-loginfacebook"><span class="white-type">Login from facebook</span></button>
+        </div>
+
+
+
+        <span  class="Forgot-your-password">
+            Forgot your password?
+        </span>
+    </div>
+</form>
+</body>
+</html>
